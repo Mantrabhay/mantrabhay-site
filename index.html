@@ -1,183 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Mantrabhay – Devotion • Music • Poetry</title>
 
-<meta name="description" content="Official website of Mantrabhay featuring Bhairavastava, Shiv Tandav Stotram, devotional music and poetry.">
+<meta name="description" content="Official website of Mantrabhay featuring Bhairavastava, Shiv Tandav Stotram and devotional music.">
 
 <link rel="icon" href="logo.png">
 
 <style>
 
-/* ===== BODY ===== */
-
 body{
 margin:0;
 font-family:Georgia, serif;
 color:#f5e6c8;
-
 background:
-linear-gradient(rgba(0,0,0,0.88),rgba(0,0,0,0.92)),
+linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.92)),
 url("background.jpg");
-
 background-size:cover;
 background-attachment:fixed;
 overflow-x:hidden;
 }
 
-/* ===== MANDALA BACKGROUND ===== */
-
+/* Mandala overlay */
 body::before{
 content:"";
 position:fixed;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-width:900px;
-height:900px;
+width:1000px;
+height:1000px;
 background:url("Mandala.png");
 background-size:contain;
 background-repeat:no-repeat;
-opacity:0.07;
+opacity:0.08;
 pointer-events:none;
 z-index:0;
 }
 
-/* ===== CONTAINER ===== */
-
 .container{
-max-width:1200px;
+max-width:1300px;
 margin:auto;
-padding:40px 20px;
-text-align:center;
+padding:50px 20px;
 position:relative;
 z-index:1;
+text-align:center;
 }
 
-/* ===== LOGO ===== */
-
+/* Logo */
 .logo{
-width:120px;
-border-radius:16px;
-box-shadow:0 0 25px rgba(255,200,80,0.6);
-animation:glow 3s infinite alternate;
-}
-
-@keyframes glow{
-from{box-shadow:0 0 15px rgba(255,200,80,0.4);}
-to{box-shadow:0 0 40px rgba(255,200,80,0.9);}
+width:130px;
+border-radius:20px;
+box-shadow:0 0 35px rgba(255,200,80,0.8);
+margin-bottom:15px;
 }
 
 h1{
 color:#ffd36b;
-margin:15px 0 5px 0;
+font-size:40px;
+margin:10px 0 5px 0;
 }
 
 .subtitle{
-opacity:0.85;
-margin-bottom:35px;
+opacity:0.9;
+margin-bottom:40px;
 }
 
-/* ===== FEATURED VIDEO ===== */
-
+/* Video */
 .video{
-max-width:650px;
-margin:auto;
-border-radius:10px;
+max-width:750px;
+margin:0 auto 50px auto;
+border-radius:12px;
 overflow:hidden;
-box-shadow:0 0 25px rgba(255,200,80,0.5);
+box-shadow:0 0 35px rgba(255,200,80,0.6);
 }
 
 iframe{
 width:100%;
-height:350px;
+height:420px;
 border:none;
 }
 
-/* ===== GRID LAYOUT ===== */
-
+/* GRID - FORCE COLUMNS ON DESKTOP */
 .grid{
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-margin-top:45px;
+grid-template-columns:repeat(3, 1fr);
+gap:35px;
+align-items:start;
 }
 
-/* ===== SECTION CARD ===== */
-
+/* Section card */
 .section{
-background:rgba(0,0,0,0.55);
-padding:25px;
-border-radius:12px;
-backdrop-filter:blur(6px);
+background:rgba(0,0,0,0.6);
+padding:30px;
+border-radius:16px;
+backdrop-filter:blur(8px);
 box-shadow:0 0 25px rgba(255,200,80,0.15);
 }
 
 .section-title{
 color:#ffd36b;
-margin-bottom:15px;
-font-size:18px;
+font-size:20px;
+margin-bottom:18px;
 }
-
-/* ===== BUTTONS ===== */
 
 .button{
 display:block;
-padding:10px;
-margin:8px 0;
+padding:12px;
+margin:10px 0;
 border:1px solid #ffd36b;
-border-radius:6px;
+border-radius:8px;
 text-decoration:none;
 color:#f5e6c8;
 transition:.3s;
+font-size:15px;
 }
 
 .button:hover{
 background:#ffd36b;
 color:black;
-box-shadow:0 0 15px #ffd36b;
-transform:scale(1.04);
+box-shadow:0 0 20px #ffd36b;
+transform:scale(1.05);
 }
 
-/* ===== FLOATING SYMBOLS ===== */
-
+/* Floating symbols */
 .symbol{
 position:fixed;
-opacity:0.06;
-animation:float 20s infinite ease-in-out;
+opacity:0.15;
+animation:float 18s infinite ease-in-out;
 z-index:0;
 }
 
 @keyframes float{
 0%{transform:translateY(0px) rotate(0deg);}
-50%{transform:translateY(-60px) rotate(180deg);}
+50%{transform:translateY(-80px) rotate(180deg);}
 100%{transform:translateY(0px) rotate(360deg);}
 }
 
-.trishul{top:5%;left:5%;width:120px;}
-.om{bottom:10%;right:5%;width:100px;animation-duration:24s;}
-.damru{top:65%;left:8%;width:90px;animation-duration:22s;}
-.rudraksha{top:30%;right:12%;width:95px;animation-duration:26s;}
-.lotus{bottom:18%;left:45%;width:110px;animation-duration:28s;}
+.trishul{top:5%;left:3%;width:140px;}
+.om{bottom:8%;right:5%;width:110px;}
+.damru{top:70%;left:10%;width:90px;}
+.rudraksha{top:35%;right:10%;width:100px;}
+.lotus{bottom:20%;left:45%;width:120px;}
 
-/* ===== SPOTIFY BUTTON ===== */
-
+/* Spotify floating button */
 .spotify{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#1db954;
 color:white;
-padding:12px 18px;
-border-radius:25px;
+padding:14px 22px;
+border-radius:30px;
 text-decoration:none;
-font-size:14px;
-box-shadow:0 0 15px rgba(0,0,0,0.6);
+font-size:15px;
+box-shadow:0 0 20px rgba(0,0,0,0.7);
 transition:.3s;
 z-index:999;
 }
@@ -186,29 +166,22 @@ z-index:999;
 transform:scale(1.1);
 }
 
-/* ===== MOBILE ===== */
-
-@media(max-width:1000px){
-
+/* Mobile layout */
+@media(max-width:1024px){
 .grid{
 grid-template-columns:1fr;
 }
-
 iframe{
-height:240px;
+height:250px;
 }
-
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-<!-- Floating Sacred Symbols -->
-
+<!-- Floating symbols -->
 <img src="trishul.png" class="symbol trishul">
 <img src="om.png" class="symbol om">
 <img src="damru.png" class="symbol damru">
@@ -220,84 +193,43 @@ height:240px;
 <img src="logo.png" class="logo">
 
 <h1>Mantrabhay</h1>
-
 <div class="subtitle">Devotion • Music • Poetry</div>
 
-
-<!-- Featured Video -->
-
 <div class="video">
-
 <iframe src="https://www.youtube.com/embed/Jn_mXwsXzQ0" allowfullscreen></iframe>
-
 </div>
-
 
 <div class="grid">
 
-
-<!-- Videos -->
-
 <div class="section">
-
 <div class="section-title">Shiva Videos</div>
-
 <a class="button" href="https://youtu.be/Jn_mXwsXzQ0">🔥 Bhairavastava (1.1M+ Views)</a>
-
 <a class="button" href="https://youtu.be/ktI-xIj03Ek">⚡ Shiv Tandav Stotram</a>
-
 <a class="button" href="https://youtu.be/Dd60RL1FIDg">🕉 Ravan Rachit Shiv Dhyanam</a>
-
 </div>
 
-
-<!-- Playlists -->
-
 <div class="section">
-
 <div class="section-title">YouTube Playlists</div>
-
 <a class="button" href="https://youtube.com/playlist?list=PL1qdLgzUlC3NUMm4R_pTjP-y4TYTsAA3t">Sacred Stotra Originals</a>
-
 <a class="button" href="https://youtube.com/playlist?list=PL1qdLgzUlC3MnrRy5R5pjBOfE_qRK25YL">Mantra Voiceovers</a>
-
 <a class="button" href="https://youtube.com/playlist?list=PL1qdLgzUlC3PIUauGrG-sWm0BM7ECOtMV">Rap Songs</a>
-
 <a class="button" href="https://youtube.com/playlist?list=OLAK5uy_mXeqGf-RJ_-B9vB2M5sPqZa-b_VUtZnUw">🎵 The Stranger’s Tide – Album</a>
-
 </div>
-
-
-<!-- Platforms -->
 
 <div class="section">
-
 <div class="section-title">Platforms & Social</div>
-
 <a class="button" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp">Spotify</a>
-
 <a class="button" href="https://music.apple.com/in/artist/mantrabhay/1844798374">Apple Music</a>
-
 <a class="button" href="https://music.amazon.in/artists/B0FV8BRWZX/mantrabhay">Amazon Music</a>
-
 <a class="button" href="https://www.youtube.com/@mantrabhay">YouTube Channel</a>
-
 <a class="button" href="https://www.instagram.com/mantrabhay">Instagram</a>
-
 <a class="button" href="https://www.yourquote.in/mantrabhay">Poetry</a>
-
-</div>
-
-
 </div>
 
 </div>
+</div>
 
-
-<a class="spotify" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp">
-🎧 Listen on Spotify
-</a>
+<a class="spotify" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp">🎧 Listen on Spotify</a>
 
 </body>
-
-</html>
+  </html>
