@@ -8,56 +8,101 @@
 
 body{
 margin:0;
-padding:0;
+padding:40px 20px;
 background: radial-gradient(circle at center,#3b2400,#000000);
 color:#d4af37;
 font-family: Georgia, serif;
-display:flex;
-align-items:center;
-justify-content:center;
 text-align:center;
-min-height:100vh;
+overflow-x:hidden;
 }
+
+/* Mandala watermark */
+
+body::before{
+content:"";
+position:fixed;
+top:50%;
+left:50%;
+width:700px;
+height:700px;
+background:url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mandala.svg/800px-Mandala.svg.png");
+background-size:contain;
+background-repeat:no-repeat;
+opacity:0.04;
+transform:translate(-50%,-50%);
+pointer-events:none;
+}
+
+/* Main container */
 
 .container{
-max-width:400px;
-width:100%;
+max-width:420px;
+margin:auto;
 }
 
+/* Logo animation */
+
 .logo{
-width:110px;
-border-radius:12px;
+width:120px;
+border-radius:14px;
+margin-top:30px;
 margin-bottom:20px;
-box-shadow:0 0 25px rgba(212,175,55,0.35);
+animation:glow 3s ease-in-out infinite alternate;
 }
+
+@keyframes glow{
+from{
+box-shadow:0 0 10px rgba(212,175,55,0.4);
+}
+to{
+box-shadow:0 0 40px rgba(212,175,55,0.9);
+}
+}
+
+/* Title */
 
 h1{
 font-size:42px;
 margin:10px 0;
+letter-spacing:1px;
 }
+
+/* Subtitle */
 
 .subtitle{
 font-size:15px;
-opacity:0.8;
+opacity:0.85;
 margin-bottom:35px;
 }
 
+/* Buttons */
+
 .button{
 display:block;
-width:220px;
-margin:12px auto;
-padding:12px;
+width:240px;
+margin:14px auto;
+padding:14px;
 border:1px solid #d4af37;
-border-radius:6px;
+border-radius:8px;
 color:#d4af37;
 text-decoration:none;
 font-size:16px;
-transition:all 0.3s ease;
+transition:all 0.35s ease;
 }
 
 .button:hover{
 background:#d4af37;
 color:black;
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(212,175,55,0.35);
+}
+
+/* Footer */
+
+.footer{
+margin-top:60px;
+font-size:12px;
+opacity:0.6;
 }
 
 </style>
@@ -75,13 +120,25 @@ color:black;
 Devotion • Music • Poetry
 </div>
 
-<a class="button" href="https://youtube.com/@mantrabhay" target="_blank">YouTube</a>
+<a class="button" href="https://youtube.com/@mantrabhay" target="_blank">
+YouTube
+</a>
 
-<a class="button" href="https://instagram.com/mantrabhay" target="_blank">Instagram</a>
+<a class="button" href="https://instagram.com/mantrabhay" target="_blank">
+Instagram
+</a>
 
-<a class="button" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp" target="_blank">Music Platforms</a>
+<a class="button" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp" target="_blank">
+Music Platforms
+</a>
 
-<a class="button" href="https://youtube.com/@mantrabhay" target="_blank">Poetry</a>
+<a class="button" href="https://www.yourquote.in/mantrabhay" target="_blank">
+Poetry
+</a>
+
+<div class="footer">
+© Mantrabhay
+</div>
 
 </div>
 
