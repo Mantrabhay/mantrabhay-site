@@ -2,54 +2,57 @@
 <html>
 
 <head>
-
 <title>Mantrabhay</title>
-<link rel="icon" type="image/png" href="logo.png">
+
 <style>
 
 body{
-background: radial-gradient(circle at center,#3b2400,#000);
+margin:0;
+padding:0;
+background: radial-gradient(circle at center,#3b2400,#000000);
 color:#d4af37;
 font-family: Georgia, serif;
-text-align:center;
-margin:0;
-height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
-flex-direction:column;
+text-align:center;
+min-height:100vh;
 }
-padding-top:60px;
+
+.container{
+max-width:400px;
+width:100%;
 }
 
 .logo{
-width:120px;
-border-radius:14px;
+width:110px;
+border-radius:12px;
 margin-bottom:20px;
+box-shadow:0 0 25px rgba(212,175,55,0.35);
 }
 
 h1{
 font-size:42px;
-margin-bottom:10px;
+margin:10px 0;
 }
 
-.tagline{
-font-size:16px;
-margin-bottom:40px;
-color:#caa95a;
+.subtitle{
+font-size:15px;
+opacity:0.8;
+margin-bottom:35px;
 }
 
 .button{
 display:block;
-width:240px;
-margin:14px auto;
-padding:14px;
+width:220px;
+margin:12px auto;
+padding:12px;
 border:1px solid #d4af37;
 border-radius:6px;
-text-decoration:none;
 color:#d4af37;
-font-size:18px;
-transition:0.3s;
+text-decoration:none;
+font-size:16px;
+transition:all 0.3s ease;
 }
 
 .button:hover{
@@ -58,29 +61,29 @@ color:black;
 }
 
 </style>
-
 </head>
 
-
 <body>
+
+<div class="container">
 
 <img src="logo.png" class="logo">
 
 <h1>Mantrabhay</h1>
 
-<div class="tagline">
+<div class="subtitle">
 Devotion • Music • Poetry
 </div>
 
+<a class="button" href="https://youtube.com/@mantrabhay" target="_blank">YouTube</a>
 
-<a class="button" href="https://youtube.com/@mantrabhay">YouTube</a>
+<a class="button" href="https://instagram.com/mantrabhay" target="_blank">Instagram</a>
 
-<a class="button" href="https://instagram.com/mantrabhay">Instagram</a>
+<a class="button" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp" target="_blank">Music Platforms</a>
 
-<a class="button" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp">Music Platforms</a>
+<a class="button" href="https://youtube.com/@mantrabhay" target="_blank">Poetry</a>
 
-<a class="button" href="https://yourquote.in/mantrabhay">Poetry</a>
-
+</div>
 
 </body>
 </html>
