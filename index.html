@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -8,151 +7,126 @@
 
 <title>Mantrabhay | Devotion • Music • Poetry</title>
 
-<meta name="description" content="Mantrabhay — devotional music, sacred mantras, Sanskrit stotras, poetry and spiritual sound journeys.">
-<meta name="keywords" content="Mantrabhay, Bhairavstava, Shiv Tandav Stotram, Sanskrit Mantras, Devotional Music, Hindu Stotra, Spiritual Music">
+<meta name="description" content="Official website of Mantrabhay – Devotional music, Sanskrit stotras, mantras, poetry and spiritual content. Listen to original compositions and sacred recitations.">
+
+<meta name="keywords" content="Mantrabhay, Bhairavastava, Shiv Tandav Stotram, Sanskrit Mantra, Hindu Devotional Music, Sanskrit Stotra, Spiritual Music">
+
 <meta name="author" content="Mantrabhay">
 
-<!-- Google verification (replace content value) -->
-<meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
-
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="logo.png">
-
-<!-- OpenGraph preview -->
-<meta property="og:title" content="Mantrabhay | Devotion • Music • Poetry">
-<meta property="og:description" content="Explore devotional music, Sanskrit stotras, spiritual poetry and sacred sound journeys.">
+<meta property="og:title" content="Mantrabhay">
+<meta property="og:description" content="Devotion • Music • Poetry">
 <meta property="og:image" content="logo.png">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://mantrabhay.com">
 
-<!-- Twitter preview -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mantrabhay | Devotion • Music • Poetry">
-<meta name="twitter:description" content="Devotional music, Sanskrit mantras and spiritual poetry.">
-<meta name="twitter:image" content="logo.png">
+<link rel="icon" href="logo.png">
 
 <style>
 
 body{
 margin:0;
 font-family:Georgia,serif;
-text-align:center;
+background:radial-gradient(circle,#3a1f00,#000000);
 color:#d4af37;
-background:#000;
-overflow-x:hidden;
-}
-
-/* rotating mandala */
-
-body::before{
-content:"";
-position:fixed;
-top:50%;
-left:50%;
-width:900px;
-height:900px;
-background:url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mandala.svg/1024px-Mandala.svg.png");
-background-size:contain;
-background-repeat:no-repeat;
-opacity:0.04;
-transform:translate(-50%,-50%);
-animation:rotateMandala 120s linear infinite;
-pointer-events:none;
-}
-
-@keyframes rotateMandala{
-from{transform:translate(-50%,-50%) rotate(0deg);}
-to{transform:translate(-50%,-50%) rotate(360deg);}
-}
-
-.container{
-max-width:520px;
-margin:auto;
+text-align:center;
 padding:40px 20px;
 }
 
 .logo{
-width:130px;
-border-radius:20px;
-box-shadow:0 0 25px rgba(212,175,55,0.7);
+width:110px;
+border-radius:15px;
 margin-bottom:20px;
-animation:glow 3s ease-in-out infinite alternate;
-}
-
-@keyframes glow{
-from{box-shadow:0 0 10px rgba(212,175,55,0.4);}
-to{box-shadow:0 0 35px rgba(212,175,55,1);}
+box-shadow:0 0 20px rgba(212,175,55,0.5);
 }
 
 h1{
-font-size:42px;
-margin:10px 0;
-letter-spacing:1px;
+font-size:40px;
+margin-bottom:5px;
 }
 
 .subtitle{
-opacity:0.85;
-margin-bottom:30px;
+font-size:15px;
+opacity:0.8;
+margin-bottom:40px;
 }
 
 .section{
-margin-top:40px;
+margin-top:35px;
 font-size:18px;
-letter-spacing:1px;
 opacity:0.9;
 }
 
 .button{
 display:block;
-margin:12px auto;
-padding:13px;
+width:260px;
+margin:10px auto;
+padding:12px;
 border:1px solid #d4af37;
 color:#d4af37;
 text-decoration:none;
-width:85%;
-border-radius:8px;
-transition:0.3s;
+border-radius:6px;
+transition:all .3s ease;
 font-size:15px;
 }
 
 .button:hover{
 background:#d4af37;
 color:black;
-transform:translateY(-3px);
-box-shadow:0 8px 20px rgba(212,175,55,0.35);
+box-shadow:0 0 20px #d4af37;
+transform:translateY(-2px);
+}
+
+.highlight{
+background:#d4af37;
+color:black;
+font-weight:bold;
 }
 
 .video{
-margin-top:25px;
+margin-top:20px;
 }
 
-iframe{
+.video iframe{
 width:100%;
-border-radius:10px;
-}
-
-.spotify-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#1DB954;
-color:white;
-padding:12px 16px;
-border-radius:30px;
-font-size:14px;
-text-decoration:none;
-box-shadow:0 6px 20px rgba(0,0,0,0.4);
-z-index:999;
+max-width:420px;
+height:236px;
+border:none;
+border-radius:8px;
+box-shadow:0 0 20px rgba(212,175,55,0.4);
 }
 
 .footer{
 margin-top:40px;
 font-size:12px;
-opacity:0.6;
+opacity:0.7;
 }
 
-.sub-count{
-margin-top:10px;
+.spotify{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#1db954;
+color:white;
+padding:10px 16px;
+border-radius:30px;
+text-decoration:none;
+font-size:14px;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+@media(max-width:600px){
+
+h1{
+font-size:32px;
+}
+
+.button{
+width:90%;
+}
+
+.video iframe{
+height:210px;
+}
+
 }
 
 </style>
@@ -161,35 +135,25 @@ margin-top:10px;
 
 <body>
 
-<div class="container">
-
 <img src="logo.png" class="logo">
 
 <h1>Mantrabhay</h1>
-
-<div class="subtitle">
-Devotion • Music • Poetry
-</div>
+<div class="subtitle">Devotion • Music • Poetry</div>
 
 <div class="section">Featured Video</div>
 
 <div class="video">
-
-<iframe height="280"
-src="https://www.youtube.com/embed/Jn_mXwsXzQ0"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
+<iframe src="https://www.youtube.com/embed/Jn_mXwsXzQ0" allowfullscreen></iframe>
 </div>
 
-<a class="button" href="https://youtu.be/Jn_mXwsXzQ0" target="_blank">
-🔥 Bhairavstava (1.1M+ Views)
+<a class="button" href="https://youtu.be/Jn_mXwsXzQ0?si=8ZLVLbuUL0O2GYkL" target="_blank">
+🔥 Bhairavastava (1.1M+ Views)
 </a>
 
-<a class="button" href="https://youtu.be/ktI-xIj03Ek" target="_blank">
+<a class="button" href="https://youtu.be/ktI-xIj03Ek?si=mbf6d0o57wUdKCxl" target="_blank">
 ⚡ Shiv Tandav Stotram
 </a>
+
 
 <div class="section">YouTube Playlists</div>
 
@@ -209,6 +173,7 @@ Rap Songs
 Original Music Album
 </a>
 
+
 <div class="section">Listen on Music Platforms</div>
 
 <a class="button" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp" target="_blank">
@@ -223,19 +188,17 @@ Apple Music
 Amazon Music
 </a>
 
+
 <div class="section">Follow</div>
 
-<a class="button" href="https://www.youtube.com/@mantrabhay" target="_blank">
+<a class="button highlight" href="https://www.youtube.com/@mantrabhay" target="_blank">
 YouTube Channel
 </a>
-
-<div class="sub-count">
-<img src="https://img.shields.io/youtube/channel/subscribers/UC9RkS3S8R3T5V7rL0TQ2pOw?style=for-the-badge&label=Subscribers&color=gold">
-</div>
 
 <a class="button" href="https://www.instagram.com/mantrabhay" target="_blank">
 Instagram
 </a>
+
 
 <div class="section">Poetry</div>
 
@@ -247,11 +210,11 @@ Read My Poetry
 © Mantrabhay
 </div>
 
-</div>
 
-<a class="spotify-float" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp" target="_blank">
+<a class="spotify" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp" target="_blank">
 🎧 Listen on Spotify
 </a>
 
+
 </body>
-  </html>
+</html>
