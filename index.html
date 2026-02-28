@@ -7,264 +7,166 @@
 
 <title>Mantrabhay – Devotion • Music • Poetry</title>
 
-<meta name="description" content="Official website of Mantrabhay featuring Bhairavastava, Shiv Tandav Stotram, Ravan Rachit Shiv Dhyanam, devotional music, Sanskrit stotra recitations, and spiritual poetry.">
+<meta name="description" content="Official website of Mantrabhay featuring Bhairavastava, Shiv Tandav Stotram and Ravan Rachit Shiv Dhyanam. Devotional Sanskrit stotras and spiritual music.">
 
-<meta name="keywords" content="Mantrabhay, Bhairavastava, Shiv Tandav Stotram, Shiv Dhyanam, Sanskrit mantra, devotional music, Shiva stotra">
+<link rel="icon" type="image/png" href="logo.png">
 
-<meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://mantrabhay.com">
-
+<!-- Open Graph -->
 <meta property="og:title" content="Mantrabhay – Devotion • Music • Poetry">
-<meta property="og:description" content="Official devotional music project Mantrabhay.">
-<meta property="og:image" content="https://mantrabhay.com/logo.png">
+<meta property="og:description" content="Sacred Sanskrit stotras, Shiva meditation music and devotional poetry.">
+<meta property="og:image" content="logo.png">
 <meta property="og:type" content="website">
-
-<link rel="icon" href="logo.png">
 
 <style>
 
 body{
 margin:0;
-font-family:Georgia, serif;
-color:#f5e6c8;
+font-family:serif;
+background:url('background.jpg') center/cover fixed;
+color:#f5e6c4;
 text-align:center;
-background:url('background.jpg') center/cover fixed no-repeat;
 }
 
-/* lighter overlay */
-
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.35);
-z-index:-1;
-}
-
-/* mandala background */
-
-.mandala{
-position:fixed;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-opacity:0.08;
-width:85vw;
-max-width:900px;
-pointer-events:none;
-z-index:-1;
-}
-
-/* floating symbols */
-
-.float{
-position:fixed;
-opacity:0.28;
-animation:float 20s infinite linear;
-pointer-events:none;
-}
-
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-45px)}
-100%{transform:translateY(0)}
-}
-
-/* header */
-
-.logo{
-width:110px;
-border-radius:14px;
-box-shadow:0 0 25px #d4af37;
-margin-top:35px;
-}
-
-h1{
-font-size:42px;
-margin:10px 0;
-background:linear-gradient(90deg,#f8e7b5,#d4af37,#fff2b0);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-.subtitle{
-opacity:0.85;
-margin-bottom:25px;
-}
-
-/* video */
-
-.featured{
-max-width:750px;
-margin:auto;
-border-radius:16px;
-overflow:hidden;
-box-shadow:0 0 30px rgba(212,175,55,0.45);
-}
-
-/* grid layout */
-
-.container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-padding:40px;
-max-width:1100px;
-margin:auto;
-}
-
-/* cards */
+/* glass panels */
 
 .section{
 background:rgba(0,0,0,0.55);
-border-radius:14px;
+backdrop-filter:blur(6px);
 padding:25px;
-box-shadow:0 0 25px rgba(0,0,0,0.6);
+margin:30px auto;
+border-radius:16px;
+width:90%;
+max-width:900px;
 }
 
-.section h2{
-margin-bottom:18px;
-color:#f4d37a;
+/* headings */
+
+h1{
+font-size:40px;
+margin:10px 0;
+color:#f8d57e;
+}
+
+h2{
+color:#f8d57e;
+margin-bottom:20px;
 }
 
 /* buttons */
 
-.button{
+.link-btn{
 display:block;
-margin:12px auto;
+border:2px solid #d4af37;
+border-radius:12px;
 padding:12px;
-border:1px solid #d4af37;
-border-radius:10px;
-color:#f4e7c2;
+margin:10px auto;
+width:85%;
+max-width:320px;
 text-decoration:none;
-transition:all .3s ease;
+color:#f5e6c4;
+transition:0.3s;
 }
 
-.button:hover{
+.link-btn:hover{
 background:#d4af37;
-color:#000;
-box-shadow:0 0 18px #d4af37;
-transform:translateY(-2px);
+color:black;
 }
 
-/* spotify button */
+/* grid */
 
-.spotify{
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+@media(max-width:700px){
+.grid{
+grid-template-columns:1fr;
+}
+}
+
+/* floating icons */
+
+.float{
 position:fixed;
-bottom:18px;
-right:18px;
+opacity:0.35;
+animation:float 20s infinite linear;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-30px);}
+100%{transform:translateY(0);}
+}
+
+.icon1{top:20%;left:5%;width:70px;}
+.icon2{top:60%;right:6%;width:70px;}
+.icon3{bottom:25%;left:10%;width:60px;}
+.icon4{top:40%;right:20%;width:80px;}
+
+/* youtube video */
+
+.video{
+max-width:800px;
+margin:auto;
+}
+
+/* spotify floating */
+
+.spotify-btn{
+position:fixed;
+bottom:25px;
+right:20px;
 background:#1db954;
 color:white;
-padding:12px 18px;
-border-radius:30px;
-text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
 font-weight:bold;
-box-shadow:0 0 15px rgba(0,0,0,0.4);
-}
-
-footer{
-margin:30px;
-opacity:0.6;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
 }
 
 </style>
 
-<!-- ================== STRUCTURED DATA ================== -->
+<!-- WEBSITE SCHEMA -->
 
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"MusicGroup",
- "name":"Mantrabhay",
- "url":"https://mantrabhay.com",
- "logo":"https://mantrabhay.com/logo.png",
- "sameAs":[
-  "https://www.youtube.com/@mantrabhay",
-  "https://www.instagram.com/mantrabhay"
- ]
+"@context":"https://schema.org",
+"@type":"WebSite",
+"name":"Mantrabhay",
+"url":"https://mantrabhay.com"
 }
 </script>
 
+<!-- ORGANIZATION SCHEMA -->
+
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"Person",
- "name":"Abhay Kumar",
- "alternateName":"Mantrabhay",
- "url":"https://mantrabhay.com",
- "image":"https://mantrabhay.com/logo.png"
+"@context":"https://schema.org",
+"@type":"Organization",
+"name":"Mantrabhay",
+"url":"https://mantrabhay.com",
+"logo":"https://mantrabhay.com/logo.png",
+"sameAs":[
+"https://youtube.com/@mantrabhay",
+"https://instagram.com/mantrabhay"
+]
 }
 </script>
 
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"WebSite",
- "name":"Mantrabhay",
- "url":"https://mantrabhay.com"
-}
-</script>
-
-<!-- VIDEO RICH SNIPPETS -->
+<!-- VIDEO SCHEMA -->
 
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"VideoObject",
- "name":"Bhairavastava",
- "description":"Powerful Bhairavastava devotional stotra by Mantrabhay.",
- "thumbnailUrl":"https://img.youtube.com/vi/Dd60RL1FIDg/maxresdefault.jpg",
- "uploadDate":"2025-01-01",
- "duration":"PT3M15S",
- "contentUrl":"https://youtu.be/Dd60RL1FIDg",
- "embedUrl":"https://www.youtube.com/embed/Dd60RL1FIDg",
- "publisher":{
- "@type":"Organization",
- "name":"Mantrabhay",
- "logo":{
- "@type":"ImageObject",
- "url":"https://mantrabhay.com/logo.png"
- }
- }
-}
-</script>
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"VideoObject",
- "name":"Shiv Tandav Stotram",
- "description":"Powerful recitation of Shiv Tandav Stotram.",
- "thumbnailUrl":"https://img.youtube.com/vi/ktI-xIj03Ek/maxresdefault.jpg",
- "uploadDate":"2025-01-01",
- "embedUrl":"https://www.youtube.com/embed/ktI-xIj03Ek",
- "publisher":{"@type":"Organization","name":"Mantrabhay"}
-}
-</script>
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"VideoObject",
- "name":"Ravan Rachit Shiv Dhyanam",
- "description":"Ravan composed meditation hymn dedicated to Lord Shiva.",
- "thumbnailUrl":"https://img.youtube.com/vi/Dd60RL1FIDg/maxresdefault.jpg",
- "uploadDate":"2026-02-23",
- "embedUrl":"https://www.youtube.com/embed/Dd60RL1FIDg",
- "publisher":{"@type":"Organization","name":"Mantrabhay"}
-}
-</script>
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"MusicAlbum",
- "name":"The Stranger’s Tide",
- "byArtist":{"@type":"MusicGroup","name":"Mantrabhay"}
+"@context": "https://schema.org",
+"@type": "VideoObject",
+"name": "Ravan Rachit Shiv Dhyanam",
+"description": "Powerful Shiva meditation mantra from Ravan Rachit Shiv Dhyanam.",
+"thumbnailUrl": "https://img.youtube.com/vi/Dd60RL1FIDg/maxresdefault.jpg",
+"uploadDate": "2026-01-01",
+"embedUrl": "https://www.youtube.com/embed/Dd60RL1FIDg"
 }
 </script>
 
@@ -272,67 +174,108 @@ opacity:0.6;
 
 <body>
 
-<img src="mandala.png" class="mandala">
+<!-- Floating Icons -->
 
-<img src="trishul.png" class="float" style="top:10%;left:6%;width:70px">
-<img src="om.png" class="float" style="top:80%;left:12%;width:65px">
-<img src="rudraksha.png" class="float" style="top:20%;right:6%;width:75px">
-<img src="damru.png" class="float" style="top:70%;right:10%;width:70px">
-<img src="lotus.png" class="float" style="bottom:5%;left:45%;width:80px">
+<img src="om.png" class="float icon1">
+<img src="damru.png" class="float icon2">
+<img src="rudraksha.png" class="float icon3">
+<img src="mandala.png" class="float icon4">
 
-<img src="logo.png" class="logo">
+<!-- Header -->
+
+<img src="logo.png" width="90">
 
 <h1>Mantrabhay</h1>
-<div class="subtitle">Devotion • Music • Poetry</div>
+<p>Devotion • Music • Poetry</p>
 
-<div class="featured">
-<iframe width="100%" height="420"
+<!-- Featured Video -->
+
+<div class="section video">
+
+<iframe loading="lazy"
+width="100%" height="450"
 src="https://www.youtube.com/embed/Dd60RL1FIDg"
-frameborder="0" allowfullscreen></iframe>
+title="Ravan Rachit Shiv Dhyanam"
+frameborder="0"
+allowfullscreen></iframe>
+
 </div>
 
-<div class="container">
+<!-- Shiva Videos + Playlists -->
 
-<div class="section">
+<div class="section grid">
+
+<div>
+
 <h2>Shiva Videos</h2>
 
-<a class="button" href="https://youtu.be/Dd60RL1FIDg">🔥 Bhairavastava</a>
+<a class="link-btn" href="https://youtu.be/VIDEO1">🔥 Bhairavastava</a>
 
-<a class="button" href="https://youtu.be/ktI-xIj03Ek">⚡ Shiv Tandav Stotram</a>
+<a class="link-btn" href="https://youtu.be/VIDEO2">⚡ Shiv Tandav Stotram</a>
 
-<a class="button" href="https://youtu.be/Dd60RL1FIDg">🕉 Ravan Rachit Shiv Dhyanam</a>
+<a class="link-btn" href="https://youtu.be/Dd60RL1FIDg">🕉 Ravan Rachit Shiv Dhyanam</a>
 
 </div>
 
-<div class="section">
+<div>
+
 <h2>YouTube Playlists</h2>
 
-<a class="button">Sacred Stotra Originals</a>
-<a class="button">Mantra Voiceovers</a>
-<a class="button">Rap Songs</a>
-<a class="button">🎵 The Stranger’s Tide – Album</a>
+<a class="link-btn" href="#">Sacred Stotra Originals</a>
+
+<a class="link-btn" href="#">Mantra Voiceovers</a>
+
+<a class="link-btn" href="#">Rap Songs</a>
+
+<a class="link-btn" href="#">🎵 The Stranger's Tide – Album</a>
 
 </div>
+
+</div>
+
+<!-- Platforms -->
 
 <div class="section">
+
 <h2>Platforms & Social</h2>
 
-<a class="button">Spotify</a>
-<a class="button">Apple Music</a>
-<a class="button">Amazon Music</a>
-<a class="button" href="https://www.youtube.com/@mantrabhay">YouTube Channel</a>
-<a class="button" href="https://www.instagram.com/mantrabhay">Instagram</a>
-<a class="button">Poetry</a>
+<a class="link-btn" href="#">Spotify</a>
+
+<a class="link-btn" href="#">Apple Music</a>
+
+<a class="link-btn" href="#">Amazon Music</a>
+
+<a class="link-btn" href="#">YouTube Channel</a>
+
+<a class="link-btn" href="#">Instagram</a>
+
+<a class="link-btn" href="#">Poetry</a>
 
 </div>
 
+<!-- SEO TEXT (Important for Google) -->
+
+<div class="section">
+
+<h2>About Mantrabhay</h2>
+
+<p>
+Mantrabhay is a devotional music project dedicated to Sanskrit stotras, sacred mantras and spiritual poetry inspired by Lord Shiva. The platform presents powerful compositions such as Bhairavastava, Shiv Tandav Stotram and Ravan Rachit Shiv Dhyanam.
+</p>
+
+<p>
+These works combine traditional Sanskrit chanting with atmospheric devotional music to create immersive spiritual experiences. The Mantrabhay project explores ancient Hindu scripture, meditation music and poetic devotion through modern digital platforms including YouTube, Spotify and social media.
+</p>
+
 </div>
 
-<footer>
-© Mantrabhay
-</footer>
+<!-- Footer -->
 
-<a class="spotify" href="https://open.spotify.com/artist/1Gs5anQnG8wVYJJ4JcLMJp">🎧 Listen on Spotify</a>
+<p style="margin:40px 0;">© Mantrabhay</p>
+
+<!-- Spotify floating -->
+
+<a class="spotify-btn" href="#">🎧 Listen on Spotify</a>
 
 </body>
 </html>
