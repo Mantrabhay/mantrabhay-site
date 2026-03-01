@@ -50,11 +50,15 @@ margin-top:30px;
 h1{
 font-size:42px;
 margin:10px 0;
+color:#ffd369;
+text-shadow:0 0 15px rgba(255,211,105,0.6);
 }
 
 h2{
 margin-top:50px;
 font-size:28px;
+color:#ffd369;
+text-shadow:0 0 10px rgba(255,211,105,0.4);
 }
 
 iframe{
@@ -73,28 +77,41 @@ margin-top:30px;
 }
 
 .card{
-border:1px solid #caa75e;
-border-radius:10px;
+border:1px solid rgba(255,215,120,0.6);
+border-radius:12px;
 padding:15px;
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(6px);
 text-decoration:none;
 color:#f5d17a;
 display:block;
+transition:all 0.35s ease;
 }
 
 .card img{
 width:100%;
 border-radius:8px;
 }
-
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 30px rgba(255,210,120,0.35);
+border-color:#ffd369;
+}
 .platforms a{
 margin:10px;
 display:inline-block;
-padding:10px 20px;
-border:1px solid #caa75e;
-border-radius:6px;
-color:#f5d17a;
+padding:10px 22px;
+border:1px solid rgba(255,215,120,0.7);
+border-radius:8px;
+color:#ffd369;
 text-decoration:none;
+background:rgba(0,0,0,0.45);
+transition:all 0.3s ease;
+}
+
+.platforms a:hover{
+background:rgba(255,215,120,0.15);
+box-shadow:0 0 12px rgba(255,215,120,0.6);
 }
 
 footer{
