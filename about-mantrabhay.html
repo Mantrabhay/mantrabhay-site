@@ -17,7 +17,6 @@ body{
 margin:0;
 font-family:Georgia,serif;
 color:#f5d38a;
-text-align:center;
 background:
 linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.88)),
 url("background.jpg");
@@ -25,21 +24,59 @@ background-size:cover;
 background-attachment:fixed;
 }
 
+/* Founder Hero Section */
+
+.hero{
+position:relative;
+width:100%;
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.75)),
+url("founder-abhay.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-content{
+color:#f5d38a;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero-content p{
+font-size:18px;
+letter-spacing:1px;
+color:#e6e6e6;
+text-align:center;
+}
+
+/* Main Content */
+
 .container{
 max-width:900px;
 margin:auto;
-padding:40px 20px;
+padding:60px 20px;
 }
 
-h1{
-font-size:36px;
+.container h2{
+font-size:34px;
 margin-bottom:20px;
+text-align:center;
 }
 
-p{
+.container p{
 color:#e6e6e6;
 line-height:1.7;
 text-align:left;
+margin-bottom:20px;
 }
 
 .home{
@@ -52,46 +89,64 @@ padding:10px 18px;
 border-radius:6px;
 }
 
+.home:hover{
+background:#f5d38a;
+color:#000;
+transition:0.3s;
+}
+
+/* Mobile Optimization */
+
+@media(max-width:768px){
+.hero-content h1{
+font-size:30px;
+}
+.hero{
+height:80vh;
+}
+}
+
 </style>
 
 </head>
 
 <body>
 
+<!-- FOUNDER HERO SECTION -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Founder. Voice. Architect.</h1>
+    <p>The Vision Behind Mantrabhay</p>
+  </div>
+</div>
+
+<!-- ABOUT CONTENT -->
 <div class="container">
 
-<h1>About Mantrabhay</h1>
+<h2>About Mantrabhay</h2>
 
 <p>
-
 Mantrabhay is a devotional creative project dedicated to the timeless spiritual traditions of Sanatan Dharma. The platform presents powerful Sanskrit stotras, devotional music, and spiritual reflections inspired by the divine forms of Lord Shiva and Lord Rama.
+</p>
 
+<p>
 Through carefully crafted video presentations, mantra recitations, and explanatory meanings of sacred hymns, Mantrabhay aims to make traditional devotional literature more accessible to modern seekers around the world.
-
 </p>
 
 <p>
-
 The website features a growing collection of revered stotras including Bhairavastava, Shiv Tandav Stotram, Kal Bhairav Ashtakam, Ravan Rachit Shiv Dhyanam, Ramashtakam, and Shri Ram Tandav Stotram. Each presentation combines authentic Sanskrit verses with English meanings to help listeners understand the deeper spiritual message contained within these sacred compositions.
-
 </p>
 
 <p>
-
 In addition to devotional stotras, Mantrabhay also explores spiritual poetry, original devotional music, and creative artistic expressions rooted in ancient Indian philosophy and cultural heritage.
-
 </p>
 
 <p>
-
 The vision of Mantrabhay is to create a digital devotional space where sacred sound, spiritual meaning, and artistic creativity come together to inspire peace, devotion, and inner reflection.
-
 </p>
 
 <p>
-
 Through this platform, listeners and readers are invited to rediscover the power of ancient hymns and experience the profound beauty of Sanskrit devotional literature.
-
 </p>
 
 <br>
@@ -101,7 +156,6 @@ Through this platform, listeners and readers are invited to rediscover the power
 </div>
 
 <script type="application/ld+json">
-
 {
  "@context":"https://schema.org",
  "@type":"Organization",
@@ -115,7 +169,6 @@ Through this platform, listeners and readers are invited to rediscover the power
  "https://www.instagram.com/mantrabhay"
  ]
 }
-
 </script>
 
 </body>
