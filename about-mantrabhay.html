@@ -13,90 +13,71 @@
 
 <style>
 
+/* ===== GLOBAL ===== */
+
 body{
 margin:0;
-font-family:Georgia,serif;
+font-family:Georgia, serif;
+background:#000;
 color:#f5d38a;
-background:
-linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.88)),
-url("background.jpg");
-background-size:cover;
-background-attachment:fixed;
 }
 
-/* Founder Hero Section */
+/* ===== HERO SECTION ===== */
 
 .hero{
-.hero{
-position:relative;
-width:100%;
 height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
-url("founder-abhay.jpg");
-background-size:cover;
-background-position:top center;
-background-repeat:no-repeat;
+width:100%;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+background:
+linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
+url("founder-abhay.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 }
 
-.hero-content{
-color:#f5d38a;
+.hero-text{
 padding:20px;
-transform:translateY(-40px);
 }
 
-.hero-content h1{
+.hero-text h1{
 font-size:48px;
 letter-spacing:1.5px;
 margin-bottom:12px;
 font-weight:500;
 }
 
-.hero-content p{
+.hero-text p{
 font-size:16px;
 letter-spacing:2px;
 color:#e6e6e6;
 }
 
-.hero-content{
-color:#f5d38a;
-padding:20px;
-}
-
-.hero-content h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.hero-content p{
-font-size:18px;
-letter-spacing:1px;
-color:#e6e6e6;
-text-align:center;
-}
-
-/* Main Content */
+/* ===== CONTENT SECTION ===== */
 
 .container{
 max-width:900px;
 margin:auto;
-padding:60px 20px;
+padding:80px 20px;
+background:
+linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.90)),
+url("background.jpg");
+background-size:cover;
+background-attachment:fixed;
 }
 
 .container h2{
 font-size:34px;
-margin-bottom:20px;
+margin-bottom:25px;
 text-align:center;
 }
 
 .container p{
 color:#e6e6e6;
 line-height:1.7;
-text-align:left;
 margin-bottom:20px;
 }
 
@@ -116,15 +97,23 @@ color:#000;
 transition:0.3s;
 }
 
-/* Mobile Optimization */
+/* ===== MOBILE ===== */
 
 @media(max-width:768px){
-.hero-content h1{
-font-size:30px;
-}
+
 .hero{
-height:80vh;
+height:85vh;
+background-position:center;
 }
+
+.hero-text h1{
+font-size:28px;
+}
+
+.hero-text p{
+font-size:14px;
+}
+
 }
 
 </style>
@@ -133,9 +122,9 @@ height:80vh;
 
 <body>
 
-<!-- FOUNDER HERO SECTION -->
+<!-- HERO SECTION -->
 <div class="hero">
-  <div class="hero-content">
+  <div class="hero-text">
     <h1>Founder. Voice. Architect.</h1>
     <p>The Vision Behind Mantrabhay</p>
   </div>
