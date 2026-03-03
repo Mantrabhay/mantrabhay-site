@@ -13,7 +13,7 @@
 
 <style>
 
-/* ===== GLOBAL ===== */
+/* ===== RESET ===== */
 
 body{
 margin:0;
@@ -22,114 +22,77 @@ background:#000;
 color:#f5d38a;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== HERO ===== */
 
 .hero{
-height:100vh;
+position:relative;
 width:100%;
-display:flex;
-align-items:flex-end;
-justify-content:center;
+height:100vh;
+overflow:hidden;
+}
+
+.hero img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.hero-overlay{
+position:absolute;
+bottom:15%;
+left:50%;
+transform:translateX(-50%);
 text-align:center;
-padding-bottom:120px;
+color:#f5d38a;
+padding:0 20px;
+}
+
+.hero-overlay h1{
+font-size:42px;
+margin:0 0 10px 0;
+letter-spacing:2px;
+font-weight:600;
+text-shadow:0 0 20px rgba(0,0,0,0.7);
+}
+
+.hero-overlay p{
+font-size:15px;
+letter-spacing:3px;
+color:#dddddd;
+}
+
+/* ===== ABOUT SECTION ===== */
+
+.section{
 background:
-linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.75)),
-url("founder-abhay.jpg");
+linear-gradient(rgba(0,0,0,0.88),rgba(0,0,0,0.92)),
+url("background.jpg");
 background-size:cover;
-background-position:center top;
-background-repeat:no-repeat;
+background-attachment:fixed;
+padding:80px 20px;
 }
-
-.hero-text{
-padding:20px;
-}
-
-.hero-text h1{
-font-size:52px;
-letter-spacing:2px;
-margin-bottom:10px;
-font-weight:600;
-color:#f5d38a;
-text-shadow:0 0 20px rgba(0,0,0,0.6);
-}
-
-.hero-text p{
-font-size:15px;
-letter-spacing:3px;
-color:#cccccc;
-  }
-
-.hero-text h1{
-font-size:52px;
-letter-spacing:2px;
-margin-bottom:10px;
-font-weight:600;
-color:#f5d38a;
-text-shadow:0 0 20px rgba(0,0,0,0.6);
-}
-
-.hero-text p{
-font-size:15px;
-letter-spacing:3px;
-color:#cccccc;
-}
-
-.hero-text h1{
-font-size:52px;
-letter-spacing:2px;
-margin-bottom:10px;
-font-weight:600;
-color:#f5d38a;
-text-shadow:0 0 20px rgba(0,0,0,0.6);
-}
-
-.hero-text p{
-font-size:15px;
-letter-spacing:3px;
-color:#cccccc;
-}
-
-.hero-text h1{
-font-size:48px;
-letter-spacing:1.5px;
-margin-bottom:12px;
-font-weight:500;
-}
-
-.hero-text p{
-font-size:16px;
-letter-spacing:2px;
-color:#e6e6e6;
-}
-
-/* ===== CONTENT SECTION ===== */
 
 .container{
 max-width:900px;
 margin:auto;
-padding:80px 20px;
-background:
-linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.90)),
-url("background.jpg");
-background-size:cover;
-background-attachment:fixed;
 }
 
 .container h2{
-font-size:34px;
-margin-bottom:25px;
 text-align:center;
+font-size:34px;
+margin-bottom:30px;
 }
 
 .container p{
 color:#e6e6e6;
-line-height:1.7;
+line-height:1.8;
 margin-bottom:20px;
 }
 
 .home{
-margin-top:40px;
 display:inline-block;
+margin-top:30px;
 color:#f5d38a;
 text-decoration:none;
 border:1px solid #f5d38a;
@@ -148,16 +111,15 @@ transition:0.3s;
 @media(max-width:768px){
 
 .hero{
-height:85vh;
-background-position:center;
+height:90vh;
 }
 
-.hero-text h1{
-font-size:28px;
+.hero-overlay h1{
+font-size:26px;
 }
 
-.hero-text p{
-font-size:14px;
+.hero-overlay p{
+font-size:13px;
 }
 
 }
@@ -168,47 +130,48 @@ font-size:14px;
 
 <body>
 
-<!-- HERO SECTION -->
+<!-- HERO IMAGE -->
 <div class="hero">
-  <div class="hero-text">
+  <img src="founder-abhay.jpg" alt="Founder Abhay Kumar - Mantrabhay">
+  <div class="hero-overlay">
     <h1>Founder. Voice. Architect.</h1>
     <p>The Vision Behind Mantrabhay</p>
   </div>
 </div>
 
 <!-- ABOUT CONTENT -->
-<div class="container">
+<div class="section">
+  <div class="container">
 
-<h2>About Mantrabhay</h2>
+    <h2>About Mantrabhay</h2>
 
-<p>
-Mantrabhay is a devotional creative project dedicated to the timeless spiritual traditions of Sanatan Dharma. The platform presents powerful Sanskrit stotras, devotional music, and spiritual reflections inspired by the divine forms of Lord Shiva and Lord Rama.
-</p>
+    <p>
+    Mantrabhay is a devotional creative project dedicated to the timeless spiritual traditions of Sanatan Dharma. The platform presents powerful Sanskrit stotras, devotional music, and spiritual reflections inspired by the divine forms of Lord Shiva and Lord Rama.
+    </p>
 
-<p>
-Through carefully crafted video presentations, mantra recitations, and explanatory meanings of sacred hymns, Mantrabhay aims to make traditional devotional literature more accessible to modern seekers around the world.
-</p>
+    <p>
+    Through carefully crafted video presentations, mantra recitations, and explanatory meanings of sacred hymns, Mantrabhay aims to make traditional devotional literature more accessible to modern seekers around the world.
+    </p>
 
-<p>
-The website features a growing collection of revered stotras including Bhairavastava, Shiv Tandav Stotram, Kal Bhairav Ashtakam, Ravan Rachit Shiv Dhyanam, Ramashtakam, and Shri Ram Tandav Stotram. Each presentation combines authentic Sanskrit verses with English meanings to help listeners understand the deeper spiritual message contained within these sacred compositions.
-</p>
+    <p>
+    The website features a growing collection of revered stotras including Bhairavastava, Shiv Tandav Stotram, Kal Bhairav Ashtakam, Ravan Rachit Shiv Dhyanam, Ramashtakam, and Shri Ram Tandav Stotram. Each presentation combines authentic Sanskrit verses with English meanings to help listeners understand the deeper spiritual message contained within these sacred compositions.
+    </p>
 
-<p>
-In addition to devotional stotras, Mantrabhay also explores spiritual poetry, original devotional music, and creative artistic expressions rooted in ancient Indian philosophy and cultural heritage.
-</p>
+    <p>
+    In addition to devotional stotras, Mantrabhay also explores spiritual poetry, original devotional music, and creative artistic expressions rooted in ancient Indian philosophy and cultural heritage.
+    </p>
 
-<p>
-The vision of Mantrabhay is to create a digital devotional space where sacred sound, spiritual meaning, and artistic creativity come together to inspire peace, devotion, and inner reflection.
-</p>
+    <p>
+    The vision of Mantrabhay is to create a digital devotional space where sacred sound, spiritual meaning, and artistic creativity come together to inspire peace, devotion, and inner reflection.
+    </p>
 
-<p>
-Through this platform, listeners and readers are invited to rediscover the power of ancient hymns and experience the profound beauty of Sanskrit devotional literature.
-</p>
+    <p>
+    Through this platform, listeners and readers are invited to rediscover the power of ancient hymns and experience the profound beauty of Sanskrit devotional literature.
+    </p>
 
-<br>
+    <a class="home" href="https://mantrabhay.com">Return to Mantrabhay</a>
 
-<a class="home" href="https://mantrabhay.com">Return to Mantrabhay</a>
-
+  </div>
 </div>
 
 <script type="application/ld+json">
