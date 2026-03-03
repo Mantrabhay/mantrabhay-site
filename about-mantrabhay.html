@@ -7,11 +7,20 @@
 
 <title>About Mantrabhay | Devotional Music & Sanskrit Stotras</title>
 
+<meta name="description" content="Learn about Mantrabhay, a devotional music and Sanskrit stotra project dedicated to Lord Shiva and Lord Rama.">
+
+<link rel="canonical" href="https://mantrabhay.com/about-mantrabhay.html">
+
 <style>
 
-body{
+*{
 margin:0;
-font-family:Georgia, serif;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia,serif;
 background:#000;
 color:#f5d38a;
 }
@@ -20,48 +29,49 @@ color:#f5d38a;
 
 .hero{
 position:relative;
-width:100%;
-height:100vh;
-background-image:
-linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.8)),
-url("founder-abhay.jpg");
-background-size:cover;
-background-position:center top;
-background-repeat:no-repeat;
+height:88vh;
+background:url("founder-hero.jpg") center top / cover no-repeat;
 display:flex;
-align-items:center;
+align-items:flex-end;
 justify-content:center;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:50%;
+background:linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0));
+}
+
+.hero-text{
+position:relative;
 text-align:center;
-padding:0 20px;
+margin-bottom:70px;
 }
 
-.hero-content{
-margin-top:120px; /* pushes text slightly lower */
-}
-
-.hero h1{
+.hero-text h1{
 font-size:36px;
-letter-spacing:2px;
-margin:0;
-text-shadow:0 0 20px rgba(0,0,0,0.8);
+letter-spacing:1px;
 }
 
-.hero p{
+.hero-text p{
 margin-top:8px;
 font-size:14px;
-letter-spacing:3px;
 color:#e6e6e6;
 }
 
 /* ABOUT SECTION */
 
-.section{
+.about{
 background:
-linear-gradient(rgba(0,0,0,0.92),rgba(0,0,0,0.95)),
+linear-gradient(rgba(0,0,0,0.88),rgba(0,0,0,0.92)),
 url("background.jpg");
 background-size:cover;
 background-attachment:fixed;
-padding:70px 20px;
+padding:60px 20px;
 }
 
 .container{
@@ -69,91 +79,85 @@ max-width:900px;
 margin:auto;
 }
 
-.container h2{
+.about h2{
 text-align:center;
-font-size:30px;
+font-size:28px;
 margin-bottom:25px;
 }
 
-.container p{
+.about p{
 color:#e6e6e6;
-line-height:1.8;
-margin-bottom:18px;
+line-height:1.7;
+margin-bottom:20px;
 }
 
 .home{
+margin-top:30px;
 display:inline-block;
-margin-top:25px;
 color:#f5d38a;
 text-decoration:none;
 border:1px solid #f5d38a;
 padding:10px 18px;
 border-radius:6px;
+transition:0.3s;
 }
 
 .home:hover{
 background:#f5d38a;
 color:#000;
-transition:0.3s;
 }
 
-/* MOBILE */
+/* MOBILE ADJUSTMENT */
 
 @media(max-width:768px){
 
 .hero{
-height:100vh;
-background-position:center top;
+height:85vh;
 }
 
-.hero-content{
-margin-top:80px;
+.hero-text{
+margin-bottom:50px;
 }
 
-.hero h1{
-font-size:24px;
-}
-
-.hero p{
-font-size:12px;
+.hero-text h1{
+font-size:26px;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="hero">
-  <div class="hero-content">
-    <h1>Founder. Voice. Architect.</h1>
-    <p>The Vision Behind Mantrabhay</p>
-  </div>
+<section class="hero">
+<div class="hero-text">
+<h1>Founder. Voice. Architect.</h1>
+<p>The Vision Behind Mantrabhay</p>
 </div>
+</section>
 
-<div class="section">
-  <div class="container">
+<section class="about">
+<div class="container">
 
-    <h2>About Mantrabhay</h2>
+<h2>About Mantrabhay</h2>
 
-    <p>
-    Mantrabhay is a devotional creative project dedicated to the timeless spiritual traditions of Sanatan Dharma.
-    </p>
+<p>
+Mantrabhay is a devotional creative project dedicated to the timeless spiritual traditions of Sanatan Dharma. The platform presents powerful Sanskrit stotras, devotional music, and spiritual reflections inspired by Lord Shiva and Lord Rama.
+</p>
 
-    <p>
-    Through carefully crafted video presentations and mantra recitations, Mantrabhay makes sacred devotional literature accessible to modern seekers worldwide.
-    </p>
+<p>
+Through carefully crafted video presentations and mantra recitations, Mantrabhay makes sacred devotional literature accessible to modern seekers worldwide.
+</p>
 
-    <p>
-    The platform features revered compositions including Bhairavastava, Shiv Tandav Stotram, Kal Bhairav Ashtakam, Ravan Rachit Shiv Dhyanam, Ramashtakam, and Shri Ram Tandav Stotram.
-    </p>
+<p>
+The platform features revered compositions including Bhairavastava, Shiv Tandav Stotram, Kal Bhairav Ashtakam, Ravan Rachit Shiv Dhyanam, Ramashtakam, and Shri Ram Tandav Stotram.
+</p>
 
-    <a class="home" href="https://mantrabhay.com">Return to Mantrabhay</a>
+<a class="home" href="https://mantrabhay.com">Return to Mantrabhay</a>
 
-  </div>
 </div>
+</section>
 
 </body>
 </html>
